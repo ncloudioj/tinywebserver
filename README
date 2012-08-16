@@ -5,20 +5,23 @@ Implementing several web servers aims to benchmark the performance of concurrent
 Tinyserver is by no means a production software. However, it surpports a number of basic functions, e.g. serving plain text, html, jpeg, gif, and cgi.     
 
 * Install
-`>>cd src/`
-`>>make`
+> >>cd src/
+> >>make
 
 If installed correctly, three tinyservers would be generated, tinyserver_prefork, tinyserver_thread, and tiny_epoll, respectively. In addition, a demo cgi program would be built in directory cgi-bin.
 
 * Uninstall
-make clean
+> >>make clean
 
 * Usage
-start. `>>./tinyservername port`. For example, `>>./tinyserver_prefork 8000`
-stop. `>>Ctrl+C`
-Typing URL in your browser.
-    * request for static webpages, type URL directly, e.g. http://localhost:8000/
-    * request for cgi, you can reach it directly by setting its parameters, e.g. http://localhost:8000/cgi-bin/adder?4&2. Alternatively, reaching it via its corresponding form page, e.g. adder.html 
+    * To start. ./tinyservername port. For example, 
+> >>./tinyserver_prefork 8000
+    * To stop.
+> >>Ctrl+C
+
+    * Typing URL in your browser.
+        * request for static webpages, type URL directly, e.g. http://localhost:8000/
+        * request for cgi, you can reach it directly by setting its parameters, e.g. http://localhost:8000/cgi-bin/adder?4&2. Alternatively, reaching it via its corresponding form page, e.g. adder.html 
 
 * Benchmark using third-party facilities
 Each tinyserver program could be benchmarked by regular test tools, e.g. [Apache AB](http://httpd.apache.org/docs/2.2/programs/ab.html) 
