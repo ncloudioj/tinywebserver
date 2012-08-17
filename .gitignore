@@ -1,0 +1,8 @@
+
+*.o
+*.swp
+tinyserver_epoll
+tinyserver_thread
+tinyserver_prefork
+cgi-bin/*.o
+cgi-bin/adder
