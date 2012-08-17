@@ -1,14 +1,17 @@
-# Tinyserver - Toy web servers based on different concurrent models
+Tinywebserver - Toy web servers based on different concurrent models
+=================================================================
 
-Implementing several web servers aims to benchmark the performance of concurrent models - prefork, multi-thread, and IO-multiplex. Tinyserver is built upon the demo program in the textbook [Computer Systems: A Programmer's Perspective](http://csapp.cs.cmu.edu/), and extends to the multi-thread and epoll models.
+Tinywebserver, implements three kinds of web servers, aims to benchmark the performance of concurrent models - prefork, multi-thread, and IO-multiplex.
+Tinywebserver is built upon the demo program in the textbook [Computer Systems: A Programmer's Perspective](http://csapp.cs.cmu.edu/), and extends to the multi-thread and epoll models.
 
-Tinyserver is by no means a production software. However, it surpports a number of basic functions, e.g. serving plain text, html, jpeg, gif, and cgi.     
+Tinyserver is by no means a production software. However, it surpports a number of basic functions, e.g. handling requests of plain text, html, jpeg, gif, and cgi.
 
 * Install
 > >>cd src/
 > >>make
 
-If installed correctly, three tinyservers would be generated, tinyserver_prefork, tinyserver_thread, and tiny_epoll, respectively. In addition, a demo cgi program would be built in directory cgi-bin.
+If installed correctly, three tinyservers would be generated, tinyserver_prefork, tinyserver_thread, and tiny_epoll, respectively. 
+In addition, a demo cgi program would be built in the directory cgi-bin.
 
 * Uninstall
 > >>make clean
