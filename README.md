@@ -17,7 +17,7 @@ In addition, a demo cgi program would be built in the directory cgi-bin.
 
 * Uninstall
     
->> make clean
+`>> make clean`
 
 
 * Usage
