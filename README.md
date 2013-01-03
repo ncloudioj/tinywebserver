@@ -8,26 +8,26 @@ Tinyserver is by no means a production software. However, it surpports a number 
 
 * Install:
     
-`>> cd src/`
-    
-`>> make`
+        $ cd src/
+        $ make
 
 If installed correctly, three tinyservers would be generated, tinyserver_prefork, tinyserver_thread, and tiny_epoll, respectively. 
 In addition, a demo cgi program would be built in the directory cgi-bin.
 
 * Uninstall
     
-`>> make clean`
+        $ make clean
 
 
 * Usage
+
     * To start. ./tinyservername port. For example, 
     
-    `>> ./tinyserver_prefork 8000`
+            $ ./tinyserver_prefork 8000
     
     * To stop.
     
-    `>> Ctrl+C`
+            $ Ctrl+C
     
 
     * Typing URL in your browser.
